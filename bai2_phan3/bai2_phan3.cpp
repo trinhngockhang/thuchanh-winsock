@@ -50,7 +50,7 @@ DWORD WINAPI ClientThread(LPVOID lpParam)
 		if (ret <= 0) break;
 		buf[ret] = 0;
 		printf("Received: %s\n", buf);
-		if (strncmp(buf, "GET /", 5) == 0) {
+		if (strncmp(buf, "GET / HTTP", 10) == 0) {
 			WIN32_FIND_DATAA DATA;
 			HANDLE h = FindFirstFileA("C:\\*.*", &DATA);
 			char msg[2048] = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<html><body>";
@@ -79,6 +79,11 @@ DWORD WINAPI ClientThread(LPVOID lpParam)
 				}
 			} while (FindNextFileA(h, &DATA));
 			strcat(msg, endHtml);
+			send(client, msg, strlen(msg), 0);
+			closesocket(client);
+		}
+		else {
+			char msg[1024] = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<html><body><h1>Sai duong dan</h1></body></html>";
 			send(client, msg, strlen(msg), 0);
 			closesocket(client);
 		}
