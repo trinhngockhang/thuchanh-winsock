@@ -1,0 +1,15 @@
+name: $AV_AVG size: 0
+name: $Recycle.Bin size: 0
+name: Config.Msi size: 0
+name: Documents and Settings size: 0
+name: homework2 size: 0
+name: Intel size: 0
+name: PerfLogs size: 0
+name: Program Files size: 0
+name: Program Files (x86) size: 0
+name: ProgramData size: 0
+name: Recovery size: 0
+name: System Volume Information size: 0
+name: test_server size: 0
+name: Users size: 0
+name: Windows size: 0

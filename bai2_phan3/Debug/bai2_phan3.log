@@ -1,0 +1,5 @@
+﻿  bai2_phan3.cpp
+c:\users\khangkhang\documents\visual studio 2015\projects\bai_2_thuc_hanh\bai2_phan3\bai2_phan3.cpp(74): warning C4307: '+': integral constant overflow
+c:\users\khangkhang\documents\visual studio 2015\projects\bai_2_thuc_hanh\bai2_phan3\bai2_phan3.cpp(87): warning C4715: 'ClientThread': not all control paths return a value
+  bai2_phan3.vcxproj -> c:\users\khangkhang\documents\visual studio 2015\Projects\bai_2_thuc_hanh\Debug\bai2_phan3.exe
+  bai2_phan3.vcxproj -> c:\users\khangkhang\documents\visual studio 2015\Projects\bai_2_thuc_hanh\Debug\bai2_phan3.pdb (Full PDB)
